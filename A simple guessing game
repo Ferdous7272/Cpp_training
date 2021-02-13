@@ -1,0 +1,22 @@
+//Building a simple guessing game
+#include <iostream>
+using namespace std;
+
+int main() {
+	int hostUserNum, guestUserNum;
+	cout << "Host: 'Please enter a number between 1 to 5" << endl;
+	cin >> hostUserNum;
+	if (hostUserNum > 5)
+		cout << "NO! You are breaking the rules!" << endl;
+	else {
+		system("cls");//clears the command line so that the guest can not see the host's number!
+
+		cout << "Guest: Make your guess " << endl;
+		cin >> guestUserNum;
+
+		(hostUserNum == guestUserNum) ? cout << "correct" : cout << "Failed!";
+		//^it is called ternary operator. Shorter version of if else!
+	}
+	system("pause>0");
+
+}
