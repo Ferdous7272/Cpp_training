@@ -1,0 +1,22 @@
+//Building a simple calculator app
+#include <iostream>
+using namespace std;
+
+//reversing number. example 2228 will be 8222
+
+int main() {
+	int num, revNum=0;
+	cout << "Enter num" << endl;
+	cin >> num;
+
+	while (num != 0) {
+		revNum *= 10;
+		int lastNum = num % 10;
+		revNum += lastNum;
+		num /= 10;
+	}
+	cout << revNum;
+
+	system("pause>0");
+
+}
