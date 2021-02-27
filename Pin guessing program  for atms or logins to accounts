@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+//Pin guessing or login account program with pin
+
+int main() {
+	int userPin = 2323, pin, errorCount = 0;
+	do {
+		cout <<"Enter your pin code " << endl; 
+		cin >> pin;
+		if (pin != userPin)
+			cout << "wrong pin! Please try again" << endl;
+			errorCount++; //calculating wrong move times
+
+	} while (errorCount < 4 && pin != userPin);
+	if (errorCount < 4) //if the pin is successful
+		cout << "Login Success! Loading.." << endl;
+	else
+		cout << "Blocked.." << endl; //iif all the guesses are wronng
+
+
+	system("pause>0");
+
+}
