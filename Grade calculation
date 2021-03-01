@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+//nested do while and for loop
+
+int main() {
+	
+	float grades, sumOfGrades = 0, average = 0; //Since grades and average can be decimals
+
+	for (int i = 0; i <3 ; i++) {
+		do {
+			cout << "Enter your grades "<<i+1 << endl;
+			cin >> grades;
+			sumOfGrades += grades; //adding all the grades
+
+		} while (grades<1 || grades>5);
+	}
+	average = sumOfGrades / 3;
+	cout << "Your average grade is : " << average << endl;
+
+	system("pause>0");
+
+}
